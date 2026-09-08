@@ -11,7 +11,9 @@ class CaptiveRelease < Formula
     ENV["GEM_HOME"] = libexec
     system "gem", "install", cached_download, "--ignore-dependencies",
            "--no-document", "--install-dir", libexec
-    bin.env_script_all_files(libexec/"bin", GEM_HOME: libexec)
+    (bin/"captive-release").write_env_script(libexec/"bin/captive-release",
+                                              GEM_HOME: libexec,
+                                              GEM_PATH: libexec)
   end
 
   test do
