@@ -11,8 +11,7 @@ class CaptiveRelease < Formula
     ENV["GEM_HOME"] = libexec
     system "gem", "install", cached_download, "--ignore-dependencies",
            "--no-document", "--install-dir", libexec
-    bin.install libexec/"bin/captive-release"
-    bin.each_child { |f| wrappers.install f }
+    bin.env_script_all_files(libexec/"bin", GEM_HOME: libexec)
   end
 
   test do
