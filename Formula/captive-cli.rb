@@ -5,6 +5,7 @@ class CaptiveCli < Formula
   sha256 "41e3b7ea00457153cefa8dbbd381c89915a31f42f6ea7c053ec98de275b89c58"
   license "MIT"
 
+  depends_on "kubernetes-cli"
   depends_on "ruby"
 
   # Contrairement à captive-release, le gem a des dépendances (thor, tty-prompt…) : gem
