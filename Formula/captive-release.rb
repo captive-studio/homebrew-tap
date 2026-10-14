@@ -1,8 +1,8 @@
 class CaptiveRelease < Formula
   desc "CLI de release semver pour les projets Captive"
   homepage "https://github.com/captive-studio/captive-release"
-  url "https://rubygems.org/gems/captive-release-0.10.0.gem"
-  sha256 "36c5918df3ba0a096140e090ff8925fbd4c5625ef3a5acd7b09370642415eab1"
+  url "https://rubygems.org/gems/captive-release-0.11.0.gem"
+  sha256 "52438a9f936b862187bf34681324d53247d62c04f4cc5a29ebeaa600374a46d0"
   license "MIT"
 
   depends_on "ruby"
