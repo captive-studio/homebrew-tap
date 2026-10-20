@@ -1,8 +1,8 @@
 class CaptiveCli < Formula
   desc "CLI développeur de la plateforme Captive"
   homepage "https://github.com/captive-studio/captive-platform"
-  url "https://rubygems.org/gems/captive-cli-1.5.0.gem"
-  sha256 "c4aab91a9b9537b15b6af41865e8742fe7fa7179371a1672532677f028ed1430"
+  url "https://rubygems.org/gems/captive-cli-1.6.0.gem"
+  sha256 "aa6504c0dfb7e9f3f2fce4e78580195fe90d2a8b63a4bdcf1e2f1819a076b7b8"
   license "MIT"
 
   depends_on "kubernetes-cli"
